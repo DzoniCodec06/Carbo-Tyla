@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbo Tyla App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side">
+            <div class="eye">
+                <input type="color" id="l-eye-c" class="unactive-color">
+                <div class="under-eye-color" id="lUnderEye"></div>
+                <img src="../images/eye-icon.png" alt="left-icon" draggable="false" id="lEye">
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="l-switch" value="0">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="center">
+            <img src="../images/spyder.png" alt="spyder-image" class="spyder-img" draggable="false">
+            <div class="fans">
+                <div class="fan-controll">
+                    <img src="../images/fan_white_transparent.png" alt="" class="fan" id="fan1" draggable="false">
+                    <input type="range" min="0" max="255" class="m-slider" id="f1">
+                </div>
+                <div class="fan-controll">
+                    <img src="../images/fan_white_transparent.png" alt="" class="fan" draggable="false">
+                    <input type="range" min="0" max="255" class="m-slider" id="f2">
+                </div>
+                <div class="fan-controll">
+                    <img src="../images/fan_white_transparent.png" alt="" class="fan" draggable="false">
+                    <input type="range" min="0" max="255" class="m-slider" id="f3">
+                </div>
+                <div class="fan-controll">
+                    <img src="../images/fan_white_transparent.png" alt="" class="fan" draggable="false">
+                    <input type="range" min="0" max="255" class="m-slider" id="f4">
+                </div>
+            </div>
+        </div>
+        <div class="side">
+            <div class="eye">
+                <input type="color" id="r-eye-c" class="unactive-color">
+                <div class="under-eye-color" id="rUnderEye"></div>
+                <img src="../images/eye-icon.png" alt="right-icon" draggable="false" id="rEye">
+            </div>
+            <input type="range" min="0" max="255" class="b-slider" id="brightness">
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

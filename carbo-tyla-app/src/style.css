@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/bckg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    transition: all ease 0.2s;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img.fan {
+    width: 50px;
+    height: 50px;
+    margin: 40px 40px;
+}
+
+img.spyder-img {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.fans {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-50px);
+}
+
+.fan-controll {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+input[type="range"] {
+    rotate: -90deg;
+}
+
+.side {
+    height: 50vh;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-150px);
+}
+
+img#r-eye {
+    transform: translateY(10px);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px; /*60px*/
+    height: 44px; /*34px*/
+    rotate: 90deg;
+}
+
+.switch input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ce0000;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 36px; /*26px*/
+    width: 36px; /*26px*/
+    left: 4px; /*4px*/
+    bottom: 4px;/*4px*/
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    content: "M";
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.switch input:checked + .slider::before {
+    content: "A";
+    font-family: "Poppins", sans-serif;
+}
+
+.switch input:checked + .slider {
+    background-color: #02bb58;
+}
+  
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #02bb58;
+}
+  
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(56px); /*26px*/
+    -ms-transform: translateX(56px); /*26px*/
+    transform: translateX(56px); /*26px*/
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 130px;
+    height: 50px;
+    background-color: #dfdfdf;
+    outline: none;
+    transition: all ease-in 0.1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="range"]::before {
+    content: "";
+    height: 10px;
+    background: #007bff;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: var(--progress, 50%); /* Default fill */
+    height: 50px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2px;
+    height: 50px;
+    border-radius: 0; 
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.m-slider {
+    margin-block: 15px;
+}
+
+.m-slider-0 {
+    display: none;
+}
+
+.unactive-color {
+    display: none;
+}
+
+input.active-color {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0px 0px;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+}
+
+.under-eye-color {
+    position: absolute;
+    z-index: 0;
+    background-color: var(--bgColor);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
