@@ -1,0 +1,6 @@
+Kad je manualni mod propeleri su crveni
+a kad je automatski propeleri su zeleni
+
+Dodavanje pauka (meni)
+
+pauci u bojama u display:block fazonu
