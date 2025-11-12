@@ -1,0 +1,214 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../../public/images/bckg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.home-container {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #F7B96F;
+}
+
+header {
+    width: 97vw;
+    padding-top: 20px;
+    border-bottom: 3px solid #F7B96F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.color-pick-title {
+    display: flex;
+    flex-direction: row;
+    color: #F7B96F;
+}
+
+.thin-title {
+    font-weight: lighter;
+}
+
+.logout-btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 7vw;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    box-shadow: inset 0px 0px 10px 5px #0000002f;
+    transition: all ease 0.2s;
+}
+
+.logout-btn:hover {
+    scale: 110%;
+}
+
+.logout-btn:active {
+    scale: 100%;
+}
+
+.addBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    background-color: #1E1E1E;
+    border: 5px solid #F7B96F;
+    border-style: dashed;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 30px 30px;
+    transition: all ease 0.1s;
+}
+
+.addBtn:hover {
+    scale: 110%;
+}
+
+.addBtn:active {
+    scale: 100%;
+}
+
+.addBtn h1 {
+    font-family: "Radio Canada Big", sans-serif;
+    font-weight: lighter;
+    font-size: 100px;
+    transform: translateY(10px);
+}
+
+.spyder-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    padding: 30px 50px;
+    cursor: pointer;
+    margin: 10px 20px;
+    border: none;
+    transition: all ease 0.2s;
+}
+
+.spyder-btn:hover {
+    scale: 110%;
+}
+
+.spyder-btn:active {
+    scale: 100%;
+}
+
+.spyder-btn h1 {
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 30px;
+}
+
+.spyder-btn p {
+    font-size: 20px;
+}
+
+.spyder-btn img {
+    width: 150px;
+    height: 150px;
+}
+
+.addBtn p {
+    font-size: 30px;
+    transform: translateY(-20px);
+}
+
+.color-list {
+    transform: translateY(15vh);
+    overflow-y: auto;
+    height: 50vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    gap: 50px 50px;
+    margin-bottom: 20px;
+    padding-block: 50px;
+    z-index: 1;
+}
+
+.color-button-wrapper {
+    width: 250px; /* Ensures fixed space for each button */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-button {
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, border 0.2s ease;
+    will-change: transform;
+}
+
+.active {
+    border: 5px solid #F7B96F;
+}
+
+.color-button:hover {
+    transform: scale(1.1);
+    border: 5px solid #F7B96F;
+}
+
+.color-button:active {
+    transform: scale(1);
+}
+
+#carbon {
+    /* border: 5px solid #F7B96F; */
+    box-shadow: 0px 0px 15px 10px #ffc4008c;
+    z-index: 2;
+}
+
+.color-button h1 {
+    color: #fff;
+    transform: translateY(-25px);
+}
+
+#colorPreview {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.Red {background-color: red;}
+.Green {background-color: green;}
+.Blue {background-color: blue;}
+.Yellow {background-color: yellow;}
+.Black {background-color: black;}
+.White {background-color: white;}
+.Carbon {background: url("/images/carbon-img.jpg");}
+
+.spyders {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,102 @@
+.container {
+    background-image: url("../../../public/images/bckg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    text-align: center;
+    color: #F7B96F; /* #DD00E8 */
+}
+
+.login-form {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 15px 10px #0000002f;
+    padding: 1vw 1vh;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    box-shadow: inset 0px 0px 10px 5px #0000002f;
+    box-shadow: none;
+    padding: 10px 10px;
+    width: 18vw;
+    margin: 10px 10px;
+    transition: all ease 0.2s;
+}
+
+input#form-input:hover {
+    box-shadow: none;
+}
+
+input#form-input:focus {
+    box-shadow: none;
+}
+
+label {
+    margin-inline: 10px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+button.btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 45%;
+    padding: 5px 5px;
+    box-shadow: inset 0px 0px 10px 5px #0000002f;
+    transition: all ease 0.2s;
+}
+
+#sgnp {
+    background-color: #0f0f0f;
+    color: #fff;
+    box-shadow: none;
+}
+
+button.btn:hover {
+    box-shadow: none;
+    scale: 105%;
+}
+
+#eyeIcon {
+    position: absolute;
+    margin: 2.6vh 17.5vw;
+    color: #0f0f0f;
+    font-size: 22px;
+    cursor: pointer;
+}
